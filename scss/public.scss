@@ -1,0 +1,160 @@
+@import "Ginkgo";
+
+body {
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: rgba(90, 90, 90, 1.00);
+
+  font-size: medium;
+  text-align: center;
+  font-family: "微軟正黑體", "Open sans", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  
+  // 文字染色，背景色、文字色
+  @include selection(rgba(120, 186, 255, 1.00), rgba(255, 255, 255, 1));
+}
+
+// 效果一
+.boxs {
+  display: inline-block;
+  width: 500px;
+  height: 200px;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+ul li {
+  list-style: none;
+  height: 32px;
+}
+
+ul {
+  padding: 0;
+  float: right;
+}
+
+.menu {
+  margin: 0;
+
+  li {
+    display: inline-block;
+    width: 100px;
+    border: 1px solid white;
+
+    a {
+      display: inline-block;
+      width: 100%;
+      line-height: 30px;
+      font-size: 16px;
+      text-decoration: none;
+      color: black;
+
+      &:hover, &.active {
+        color: white;
+        background-color: red;
+      }
+    }
+  }
+}
+
+.menu li > ul {
+  display: none;
+}
+
+// 效果二
+
+.outboxs {
+  display: block;
+  width: 500px;
+  border: 1px solid rgba(255, 0, 0, .3);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.colorbox1, .colorbox2, .colorbox3 {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+.colorbox1 {
+  background-color: pink;
+}
+
+.colorbox2 {
+  background-color: orange;
+}
+
+.colorbox3 {
+  background-color: yellow;
+}
+
+// 效果五
+.colorbox4 {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+
+// 效果三
+span p {
+  font-size: 16px;
+}
+
+// 效果四
+.adBoxs {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  padding: 20px;
+
+  p {
+    font-size: 13px;
+    color: white;
+    margin: 0;
+  }
+
+  a {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
